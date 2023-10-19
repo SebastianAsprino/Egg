@@ -22,3 +22,32 @@ p {
   background-color: black;
   color: white; /* Añadido para hacer el texto visible en el fondo negro */
 }
+.gradient-text {
+  background: linear-gradient(45deg,#ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000);
+  background-size: 200% 100%;
+  animation: gradientMove 5s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  
+}
+
+.contenedor_2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  
+}
+
+
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
