@@ -1,0 +1,12 @@
+/* Modo oscuro */
+:root {
+  --body-bg: #000000;
+  --body-color: #FFFFFF;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+}
+
+/* Agrega estilos adicionales para el modo oscuro aquí */

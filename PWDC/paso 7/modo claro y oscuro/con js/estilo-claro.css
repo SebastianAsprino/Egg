@@ -1,0 +1,12 @@
+/* Modo claro */
+:root {
+  --body-bg: #FFFFFF;
+  --body-color: #000000;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+}
+
+/* Agrega estilos adicionales para el modo claro aquí */
