@@ -108,4 +108,18 @@ header nav ul{
 }
 
 
+@media (max-width: 768px) {
+  header{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #3a3a3a;
+    align-items: center;
+    justify-content: center;
+  }
+  header nav ul{
+    display: flex;
+    align-items: stretch;
+    gap: 5px;
+  }
+}
 
