@@ -6,7 +6,26 @@
     <link rel="stylesheet" href="styles.css">
     <title>Mi primera web</title>
   </head>
-  <body>
-    
+  <body >
+    <form>
+      <!-- Campo para nombre -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+      <!-- Campo para correo electrónico -->
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email">
+      <!-- Campo para mensaje -->
+      <label for="mensaje">Mensaje: </label>
+      <textarea id="mensaje" name="mensaje"></textarea>
+      <!-- Campo para selección de país -->
+      <label for="pais">Pais:</label>
+      <select id="pais" name="pais">
+      <option value="argentina">Argentina</option>
+      <option value="chile">Chile</option>
+      <option value="mexico">México</option>
+      <option value="peru">Perú</option> </select>
+      <!-- Botón de envio -->
+      <button type="submit">Enviar</button>
+      </form>
   </body>
 </html>
