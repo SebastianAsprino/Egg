@@ -69,13 +69,22 @@ p {
 } */
 
 
+@font-face {
+  font-family: 'Monaspace Krypton';
+  src: url('/Mi_Pagina_Web/Assets/fonts/MonaspaceKryptonVarVF[wght,wdth,slnt].woff2') format('woff2');
+  /* Puedes agregar más formatos de fuente aquí si es necesario, como woff2, ttf, etc. */
+    /* Puedes agregar más formatos de fuente aquí si es necesario, como woff, ttf, etc. */
+    font-weight: 100 350; /* Define los pesos de la fuente que estás utilizando */
+    font-stretch: 100% 200%; /* Define los valores de ancho de la fuente que estás utilizando */
+    font-style: normal; /* O italic si tu fuente incluye variantes itálicas */
+}
 
 
 
 
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Monaspace Krypton', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #F688CA;
@@ -127,25 +136,34 @@ nav {
 /* Estilos de la sección de introducción */
 
 .intro-section {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.intro-section h2 {
-  color: #280B1C; /* Color azul para el título */
-}
+/* .intro-section h2 { */
+  /* color: #280B1C; /* Color azul para el título */
+  /* margin-left: 5%;
+  margin-bottom: 300px;
+} */
 
 .intro-section p {
   line-height: 1.5;
+  max-width: 50%; /* Ajusta según sea necesario */
+  margin-left: 10%;
 }
 
 .image-container {
-  max-width: 100%;
-  margin-top: 20px;
+  border-color: #000;
+  /* margin-left: 20px;  Ajusta según sea necesario para separar el texto de la imagen */
 }
 
 .image-container img {
-  max-width: 100%;
+  border-radius: 2.5%;
+  max-width: 60%;
   height: auto;
 }
 
