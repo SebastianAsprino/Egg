@@ -1,93 +1,24 @@
-/* body{
-  background-color: bisque;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* h1{
-  color:rgb(255, 0, 0);
-}
-p {
-  color: #2600ff;
-} */
-
-/* .contenedor {
-  background-color: black;
-  color: white; 
-} */
-/* .gradient-text {
-  background: linear-gradient(90deg,#ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000);
-  background-size: 200% 100%;
-  animation: gradientMove 5s linear infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 40px;
-  
-} */
-
-/* .contenedor_2 {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  
-} */
-
-
-
-
-/* @keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
-} */
-
-
-/* :root[data-theme="light"] {
-  --text: #1c171b;
-  --background: #f1eef1;
-  --primary: #f278dd;
-  --secondary: #d6cdd5;
-  --accent: #043e8b;
-} */
-/* :root[data-theme="dark"] {
-  --text: #e8e3e7;
-  --background: #110e11;
-  --primary: #870d72;
-  --secondary: #322931;
-  --accent: #74affb;
-} */
-
-
 @font-face {
   font-family: 'Monaspace Krypton';
   src: url('/Assets/fonts/MonaspaceKryptonVarVF[wght,wdth,slnt].woff2') format('woff2');
-  /* Puedes agregar más formatos de fuente aquí si es necesario, como woff2, ttf, etc. */
-    /* Puedes agregar más formatos de fuente aquí si es necesario, como woff, ttf, etc. */
-    font-weight: 100 350; /* Define los pesos de la fuente que estás utilizando */
-    font-stretch: 100% 200%; /* Define los valores de ancho de la fuente que estás utilizando */
-    font-style: normal; /* O italic si tu fuente incluye variantes itálicas */
+  font-weight: 100 350;
+  font-stretch: 100% 200%;
+  font-style: normal;
 }
 
-
-
-
+.test{
+  --text: #280B1C;
+  --background: #F688CA;
+  --primary: #E3DC9C;
+  --secondary: #78CCFC;
+  --accent: #323FB3;
+}
 
 body {
   font-family: 'Monaspace Krypton', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F688CA;
+  background: linear-gradient(to bottom right, #F688CA, #E3DC9C);
 }
 
 main {
@@ -102,11 +33,11 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid #000; /* Línea negra en la parte inferior */
+  border-bottom: 1px solid #000;
 }
 
 .logo img {
-  max-width: 50px; /* Ajusta el ancho máximo de tu logo según sea necesario */
+  max-width: 50px;
 }
 
 .navbar {
@@ -123,14 +54,14 @@ nav {
 
 .navbar a {
   text-decoration: none;
-  color: #280B1C; /* Color de texto blanco */
+  color: #280B1C;
   padding: 8px 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #E3DC9C; /* Cambia el color de fondo al pasar el mouse */
+  background-color: #E3DC9C;
 }
 
 /* Estilos de la sección de introducción */
@@ -144,15 +75,15 @@ nav {
   margin-top: 30px;
 }
 
-/* .intro-section h2 { */
-  /* color: #280B1C; /* Color azul para el título */
-  /* margin-left: 5%;
+.intro-section h2 { 
+ color: #280B1C;
+  margin-left: 5%;
   margin-bottom: 300px;
-} */
+}
 
 .intro-section p {
   line-height: 1.5;
-  max-width: 50%; /* Ajusta según sea necesario */
+  max-width: 50%;
   margin-left: 10%;
 }
 
@@ -184,18 +115,19 @@ nav {
 }
 
 .feature-card {
-  background-color: #E3DC9C; /* Color de fondo gris claro para las tarjetas */
+  background: linear-gradient(to top left, #FF9E68, #FF68DE);
+  border: 2px solid #78CCFC;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
-  flex: 1; /* Ocupar el espacio disponible */
-  max-width: 300px; /* Ancho máximo de cada tarjeta */
+  flex: 1; 
+  max-width: 300px;
   text-align: center;
 }
 
 .feature-card img {
   max-width: 100%; /* Asegura que la imagen no exceda el ancho de la tarjeta */
-  border-radius: 10px 10px 0 0; /* Añade bordes redondeados solo arriba */
+  border-radius: 10px 10px 10px 10px; /* Añade bordes redondeados solo arriba */
 }
 
 .feature-card h3 {
@@ -221,19 +153,15 @@ nav {
 /* Estilos del pie de página */
 
 footer {
-  background-color: #323FB3; /* Color de fondo del pie de página */
-  color: #78CCFC; /* Color de texto blanco */
+  background-color: #323FB3;
+  color: #78CCFC;
   padding: 20px 0;
   text-align: center;
   position: relative;
   width: 100%;
   bottom: 0;
 }
-/* --text: #280B1C;
---background: #F688CA;
---primary: #E3DC9C;
---secondary: #78CCFC;
---accent: #323FB3; */
+
 .footer-content {
   display: flex;
   justify-content: space-around;
@@ -248,7 +176,7 @@ footer {
 }
 
 .footer-section h3 {
-  color: #E3DC9C; /* Color de encabezado azul */
+  color: #E3DC9C;
 }
 
 .footer-section p {
@@ -257,14 +185,102 @@ footer {
 }
 
 .footer-section a {
-  color: #78CCFC;
+  color: #323FB3;
   text-decoration: none;
   display: block;
   margin-bottom: 5px;
+  position: relative;
+}
+
+.footer-section a:visited {
+  color: #000; /* Cambiado a negro para enlaces visitados */
+}
+
+.footer-section a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #78CCFC;
+  transition: width 0.3s;
+}
+
+.footer-section a:hover:after {
+  width: 100%;
+  background-color: #F688CA; /* Cambiado a rojo cuando se hace hover */
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 10px;
-  border-top: 1px solid #fff; /* Línea superior blanca */
+  border-top: 1px solid #fff;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #5bbff8;
+}
+
+
+/* Estilos generales para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(to bottom right, #F688CA, #E3DC9C);
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-section h2 {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .intro-section p {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .image-container img {
+    max-width: 100%;
+  }
+
+  .feature-cards-container {
+    padding: 0 10px;
+  }
+
+  .feature-card {
+    max-width: 100%;
+  }
+
+  .history-section p {
+    max-width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-bottom: 10px;
+  }
+
+  .footer-section a:after {
+    background-color: #F688CA; /* Cambiado a color de fondo morado en dispositivos móviles */
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+  }
 }
