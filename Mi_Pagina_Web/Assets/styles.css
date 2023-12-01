@@ -168,7 +168,6 @@ nav {
 }
 
 /* Estilos de la sección de características */
-
 .features-section {
   text-align: center;
   margin-bottom: 30px;
@@ -191,11 +190,18 @@ nav {
   margin: 10px;
   flex: 1; /* Ocupar el espacio disponible */
   max-width: 300px; /* Ancho máximo de cada tarjeta */
+  text-align: center;
+}
+
+.feature-card img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho de la tarjeta */
+  border-radius: 10px 10px 0 0; /* Añade bordes redondeados solo arriba */
 }
 
 .feature-card h3 {
   color: #e74c3c; /* Color rojo para los títulos de las tarjetas */
 }
+
 
 /* Estilos de la sección de historia */
 
