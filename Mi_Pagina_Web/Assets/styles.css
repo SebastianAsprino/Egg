@@ -4,6 +4,7 @@
   font-weight: 100 350;
   font-stretch: 100% 200%;
   font-style: normal;
+  font-display: swap;
 }
 
 .test{
@@ -185,7 +186,7 @@ footer {
 }
 
 .footer-section a {
-  color: #323FB3;
+  color: #78CCFC;
   text-decoration: none;
   display: block;
   margin-bottom: 5px;
@@ -218,7 +219,7 @@ footer {
 
 .footer-bottom a {
   text-decoration: none;
-  color: #5bbff8;
+  color: #000;
 }
 
 
