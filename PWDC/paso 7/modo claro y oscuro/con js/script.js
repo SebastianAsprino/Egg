@@ -1,10 +1,12 @@
+const ESTILO_CLARO = 'estilo-claro.css';
+const ESTILO_OSCURO = 'estilo-oscuro.css';
+
 function cambiarModo() {
   const stylesheet = document.getElementById('stylesheet');
+  if (!stylesheet) return;
+
   const modoActual = stylesheet.getAttribute('href');
-  
-  if (modoActual === 'estilo-claro.css') {
-      stylesheet.setAttribute('href', 'estilo-oscuro.css');
-  } else {
-      stylesheet.setAttribute('href', 'estilo-claro.css');
-  }
+  stylesheet.setAttribute('href', modoActual === ESTILO_CLARO ? ESTILO_OSCURO : ESTILO_CLARO);
 }
+
+document.getElementById('cambiar-modo')?.addEventListener('click', cambiarModo);
